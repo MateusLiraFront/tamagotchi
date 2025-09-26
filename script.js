@@ -22,6 +22,7 @@ let ativarTelaDeJogo = document.getElementById("botao-troca-tela-inicio");
 let telaDeJogo = document.getElementById("tamagotchi");
 let primeiraTela= document.getElementById("primeiraTela");
 
+
  function trocarParaTelaDeJogo(){
   primeiraTela.style.display = "none";
   telaDeJogo.style.display = "flex";
