@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image:url(/img/7c9eabcda122c69073e9354d427fc53a.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+/*------------------------------- TELA DE INICIO ---------------------------------*/
+
+#primeiraTela{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#tela-de-inicio{
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+#tamagotchi-frente{
+  width: 500px;
+  image-rendering: pixelated;
+  animation-name: quicar;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; 
+  
+}
+
+#tamagotchi-costas {
+  width: 500px;
+  image-rendering: pixelated;
+  animation-name: quicar;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; 
+}
+
+@keyframes quicar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(calc(20vh - 300px));
+  }
+}
+
+#botao-troca-tela-inicio{
+  width: 90px;
+  height: 100px;
+  background-image: url(/img/botao-up.png);
+  image-rendering: pixelated;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+}
+#botao-troca-tela-inicio:hover{
+  cursor: pointer;
+}
+#botao-troca-tela-inicio:active{
+  width: 90px;
+  height: 100px;
+  background-image: url(/img/botao-down.png);
+  image-rendering: pixelated;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+}
+/*------------------------------- TELA DE JOGO --------------------------------*/
+
+#tamagotchi{
+  background-image: url(/img/console-n.png);
+  image-rendering: pixelated;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15in;
+  height: 9in;
+  border-radius: 35px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin: 100px;
+}
+
+#tamagotchi img{
+  height: 150px;
+  align-self: flex-start;
+  margin-top: 30px;
+}
+
+#display{
+  width: 780px;
+  height: 55%;
+  background-image: url(/img/Sprite-0001-Recovered.gif);
+  image-rendering: pixelated;
+  background-repeat: no-repeat;
+  background-size:cover;
+  border-radius: 15px;
+  border-style: inset;
+  border-color: #290541;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+#bicho img {
+  margin-bottom: 20px;
+  width: 160px;
+  height: 190px;
+  animation-name: andar;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes andar {
+  0% {
+    transform: translateX(290px) rotateY(0.5turn); 
+  }
+  45% {
+    transform: translateX(-290px) rotateY(0.5turn);
+  }
+  55% {
+    transform: translateX(-290px) rotateY(0); 
+  }
+  95% {
+    transform: translateX(290px) rotateY(0);
+  }
+  100% {
+    transform: translateX(290px) rotateY(0.5turn);  
+}
+}
+
