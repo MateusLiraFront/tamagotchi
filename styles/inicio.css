@@ -3,13 +3,12 @@
   padding: 0;
 }
 body{
-  background-image:url(/img/7c9eabcda122c69073e9354d427fc53a.jpg);
+  background-image:url(/img/cenario/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   flex-direction: column;
-  
 }
 /*------------------------------- TELA DE INICIO ---------------------------------*/
 
@@ -58,7 +57,7 @@ body{
 #botao-troca-tela-inicio{
   width: 90px;
   height: 100px;
-  background-image: url(/img/botao-up.png);
+  background-image: url(/img/botoes/botao-up.png);
   image-rendering: pixelated;
   background-repeat: no-repeat;
   background-size: contain;
@@ -71,7 +70,7 @@ body{
 #botao-troca-tela-inicio:active{
   width: 90px;
   height: 100px;
-  background-image: url(/img/botao-down.png);
+  background-image: url(/img/botoes/botao-down.png);
   image-rendering: pixelated;
   background-repeat: no-repeat;
   background-size: contain;
@@ -81,7 +80,7 @@ body{
 /*------------------------------- TELA DE JOGO --------------------------------*/
 
 #tamagotchi{
-  background-image: url(/img/console-n.png);
+  background-image: url(/img/cenario/console-n.png);
   image-rendering: pixelated;
   background-repeat: no-repeat;
   background-size: contain;
@@ -104,7 +103,7 @@ body{
 #display{
   width: 780px;
   height: 55%;
-  background-image: url(/img/Sprite-0001-Recovered.gif);
+  background-image: url(/img/sprites/Sprite-0001-Recovered.gif);
   image-rendering: pixelated;
   background-repeat: no-repeat;
   background-size:cover;

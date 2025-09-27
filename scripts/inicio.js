@@ -7,7 +7,7 @@ tamagotchiTelaDeInicio.id = "tela-de-inicio"
 function trocarTamagotchiOval() {
   let tamagotchiFrente = document.createElement("img");
 
-  tamagotchiFrente.src = '/img/tamagotchi-frente-reformatado.gif';
+  tamagotchiFrente.src = '/img/sprites/tamagotchi-frente-reformatado.gif';
   
   tamagotchiFrente.id = "tamagotchi-frente";
 
