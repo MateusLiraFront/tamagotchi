@@ -8,6 +8,7 @@ function andarEsquerda() {
   if (novo < -350) novo = -350;
 
   elemento.style.marginLeft = novo + "px";
+  elemento.style.transform = "scaleX(-1)";
 }
 
 function andarDireita() {
@@ -20,6 +21,7 @@ function andarDireita() {
   if (novo > 650) novo = 650;
 
   elemento.style.marginLeft = novo + "px";
+  elemento.style.transform = "scaleX(1)";
 }
 
 function movimento() {

@@ -123,8 +123,9 @@ body{
   margin-bottom: 20px;
   width: 160px;
   height: 190px;
-  /* animation-name: andar;
-  animation-duration: 10s;
+  animation-name: andar;
+  transition: margin-left 2s;
+  /* animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear; */
 }
