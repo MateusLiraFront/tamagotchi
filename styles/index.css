@@ -117,13 +117,16 @@ body{
 }
 
 #bicho img {
+  /* margin-left: -350px; */
+  margin-left: 0px;
+  /* margin-left: 650px; */
   margin-bottom: 20px;
   width: 160px;
   height: 190px;
-  animation-name: andar;
+  /* animation-name: andar;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: linear; */
 }
 
 @keyframes andar {
