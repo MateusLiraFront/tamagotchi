@@ -90,30 +90,13 @@ margin: 22px;
 }
 
 #bicho img {
+
+  margin-left: 0px;
+
   margin-bottom: 20px;
   width: 90px;
   height: 100%;
   animation-name: andar;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
+  transition: margin-left 2s;
 
-@keyframes andar {
-  0% {
-    transform: translateX(180px) rotateY(0.5turn); 
-  }
-  45% {
-    transform: translateX(-180px) rotateY(0.5turn);
-  }
-  55% {
-    transform: translateX(-180px) rotateY(0); 
-  }
-  95% {
-    transform: translateX(180px) rotateY(0);
-  }
-  100% {
-    transform: translateX(180px) rotateY(0.5turn);  
 }
-}
-
