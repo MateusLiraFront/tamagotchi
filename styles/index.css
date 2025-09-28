@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image:url(/img/cenario/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 80vh;
+}
+/*------------------------------- TELA DE INICIO ---------------------------------*/
+.musica-tela-de-inicio{
+  display: none;
+}
+
+.som-botao{
+  display: none;
+}
+
+#primeiraTela{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#tela-de-inicio{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+#tamagotchi-frente{
+  width: 200px;
+  image-rendering: pixelated;
+  animation-name: quicar;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; 
+  
+}
+
+#tamagotchi-costas {
+  width: 200px;
+  image-rendering: pixelated;
+  animation-name: quicar;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; 
+}
+
+@keyframes quicar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(calc(4vh - 70px));
+  }
+}
+
+#botao-troca-tela-inicio{
+  width: 140px;
+  height: 100px;
+  background-image: url(/img/botoes/começar-up.png);
+  image-rendering: pixelated;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+}
+#botao-troca-tela-inicio:hover{
+  cursor: pointer;
+}
+#botao-troca-tela-inicio:active{
+  width: 140px;
+  height: 100px;
+  background-image: url(/img/botoes/começar-down.gif);
+  image-rendering: pixelated;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+}
+/*------------------------------- TELA DE JOGO --------------------------------*/
+
