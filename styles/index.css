@@ -14,7 +14,7 @@ body{
 }
 /*------------------------------- TELA DE INICIO ---------------------------------*/
 .musica-tela-de-inicio{
-  display: none;
+  display: flex;
 }
 
 .som-botao{
