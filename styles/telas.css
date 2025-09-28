@@ -3,7 +3,8 @@
   padding: 0;
 }
 body{
-  background-image:url(/img/cenario/background.jpg);
+  background-color: chartreuse;
+  /*background-image:url(/img/cenario/background.jpg);*/
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
