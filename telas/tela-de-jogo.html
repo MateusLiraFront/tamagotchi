@@ -4,33 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tamagotchi</title>
-  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="/styles/telas.css">
 </head>
 <body>
-<!--------------------------------- ANIMAÇÃO DE INICIO----------------------------------------->
-<audio controls>
-  <source src="/midia/Clown(chosic.com).mp3" class="background-musica" type="audio/mpeg">
-</audio>
-<source src="/midia/button-9(chosic.com).mp3" class="som-botao" type="audio/mpeg">
-<div id="primeiraTela">
-  
-   <div id="tamagotchi-oval">
-    <img src="/img/sprites/tamagotchi-costas-reformatado.gif" id="tamagotchi-costas">
-  </div>
-  <button id="botao-troca-tela-inicio"></button>
-
-</div>
-
 <!----------------------------------- TELA DE JOGO ---------------------------------------------->
+<!--<audio controls autoplay class="background-musica">
+  <source src="/midia/Clown(chosic.com).mp3" class="background-musica" type="audio/mpeg">
+</audio>-->
+
 <div id="tamagotchi-retangular" >
+
     <div id="tamagotchi">
+
       <header>
         <img src="/img/logos/estrela.png" alt="">
       </header>
+      
       <div id="display">
-        <div id="bicho"><img src="/img/sprites/slime-andando-lado.gif" srcset=""></div>
+        <div id="bicho">
+          <img src="/img/sprites/slime-andando-lado.gif" srcset="">
+        </div>
+
+        <nav>
+          <button>brincar</button>
+          <button>comer</button>
+          <button>dormir</button>
+          <button>carinho</button>
+          <button>personalizar</button>
+        </nav>
+        
       </div>
+
     </div>
+
 </div>
 
 

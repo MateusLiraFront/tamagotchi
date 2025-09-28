@@ -6,47 +6,30 @@
   <title>Tamagotchi</title>
   <link rel="stylesheet" href="/styles/index.css">
 </head>
+
 <body>
-    <main>
-        <div>
-            <img src="/img/logos/tama-logo.png" id="logo">
-            <a href="/telas/tela-de-inicio.html"><button id="btn-inicio">INICIAR</button></a>
-            
+  <main>
+
+    <!--<audio controls autoplay class="musica-tela-de-inicio" src="/midia/03 - Definitely Our Town.mp3"></audio> -->
+
+    <audio controls class="som-botao" src="/midia/button-9(chosic.com).mp3"></audio>
+
+    <div>
+      <img src="/img/logos/tama-logo.png" id="logo">
+
+      <div id="primeiraTela">
+  
+        <div id="tamagotchi-oval">
+          <img src="/img/sprites/tamagotchi-costas-reformatado.gif" id="tamagotchi-costas">
         </div>
 
-    </main>
-<!--------------------------------- ANIMAÇÃO DE INICIO----------------------------------------->
-<!-- <audio controls>
-  <source src="/midia/Clown(chosic.com).mp3" class="background-musica" type="audio/mpeg">
-</audio>
-<source src="/midia/button-9(chosic.com).mp3" class="som-botao" type="audio/mpeg">
-<div id="primeiraTela">
-  
-   <div id="tamagotchi-oval">
-    <img src="/img/tamagotchi-costas-reformatado.gif" id="tamagotchi-costas">
-  </div>
-  <button id="botao-troca-tela-inicio"></button>
+        <a href="/telas/tela-de-jogo.html"><button id="botao-troca-tela-inicio" ></button></a>
 
-</div> -->
-
-<!----------------------------------- TELA DE JOGO ---------------------------------------------->
-<!-- <div id="tamagotchi-retangular" >
-    <div id="tamagotchi">
-      <header>
-        <img src="/img/estrela.png" alt="">
-      </header>
-      <div id="display">
-        <div id="bicho"><img src="/img/slime-andando-lado.gif" srcset=""></div>
       </div>
+    
     </div>
-</div> -->
-
-
-<!------------------------------------------------------------------------------------------------->
-<div>
-
-</div>
-
-  <script src="script.js"></script>
+ <script src="/scripts/inicio.js"></script>
+    </main>
+     
 </body>
 </html>
