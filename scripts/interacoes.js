@@ -11,13 +11,15 @@ let imagemAmorSrc = '/img/sprites/slime-amor.gif';
 let imagemDormindoSrc = '/img/sprites/slime-dormindo.gif';
    
 function trocarParaSlimeTriste() {
+    document.getElementById("popup").style.display = "flex";
     imagem.src = novaImagemSrc;
     statusTexto.textContent = 'A imagem foi trocada automaticamente!';
     console.log('Imagem alterada após 30 segundos.');
 }
 
       
-function restaurarImagemOriginal() {       
+function restaurarImagemOriginal() {
+    document.getElementById("popup").style.display = "none";       
     imagem.src = imagemOriginalSrc;
     statusTexto.textContent = 'A imagem original foi restaurada!';
     console.log('Imagem restaurada pelo usuário.');

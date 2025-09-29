@@ -83,6 +83,7 @@ nav button:hover{
 }
 
 #display{
+  margin-top: 44px;
   width: 61%;
   height: 57%;
   background-image: url(/img/sprites/Sprite-0001-Recovered.gif);
