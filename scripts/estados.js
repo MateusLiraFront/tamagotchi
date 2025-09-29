@@ -18,7 +18,7 @@ function andarDireita() {
   let novo = atual + 50;
 
   // limite para não sair da tela pela direita
-  if (novo > 380) novo = 400;
+  if (novo > 350) novo = 350;
 
   elemento.style.marginLeft = novo + "px";
   elemento.style.transform = "scaleX(1)";

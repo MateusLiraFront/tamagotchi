@@ -28,16 +28,30 @@ nav{
 } 
 
 nav button{
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
+  background-color: transparent;
+  border: none;
 }
 
 nav button:hover{
   cursor: pointer;
-  cursor: grabbing;
+  cursor: pointer;
 }
 
+.comer{
+  background-image: url(/img/botoes/botao-comer.png);
+  background-size: contain;
+}
+.dormir{
+  background-image: url(/img/botoes/botao-cama.png);
+  background-size: contain;
+}
+.carinho{
+  background-image: url(/img/botoes/botao-carinho.png);
+  background-size: contain;
+}
 #tamagotchi-retangular{
   width: 90vw;
   height: 80vh;
