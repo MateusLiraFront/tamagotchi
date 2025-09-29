@@ -25,7 +25,8 @@ function restaurarImagemOriginal() {
     console.log('Imagem restaurada pelo usuário.');
 }
 
-function trocarParaSlimeComendo() {       
+function trocarParaSlimeComendo() {      
+    document.getElementById("popup").style.display = "none";  
     imagem.src = imagemComendoSrc;
     setTimeout(restaurarImagemOriginal, 7000);
     setTimeout(trocarParaSlimeTriste, 20000); 
@@ -34,7 +35,8 @@ function trocarParaSlimeComendo() {
 }
 
 
-function trocarParaSlimeCarinho() {       
+function trocarParaSlimeCarinho() {     
+    document.getElementById("popup").style.display = "none";   
     imagem.src = imagemAmorSrc;
     setTimeout(restaurarImagemOriginal, 7000);
     setTimeout(trocarParaSlimeTriste, 20000); 
@@ -43,7 +45,8 @@ function trocarParaSlimeCarinho() {
 }
 
 
-function trocarParaSlimeDormindo() {       
+function trocarParaSlimeDormindo() {      
+    document.getElementById("popup").style.display = "none";  
     imagem.src = imagemDormindoSrc;
     setTimeout(restaurarImagemOriginal, 7000);
     setTimeout(trocarParaSlimeTriste, 20000); 
