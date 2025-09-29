@@ -77,13 +77,13 @@ nav button:hover{
 }
 
 #tamagotchi img{
-  height: 70%;
+  height: 14vh;
   align-self: flex-start;
   margin-top: 25px;
 }
 
 #display{
-  margin-top: 44px;
+  margin-top: 5px;
   width: 61%;
   height: 57%;
   background-image: url(/img/sprites/Sprite-0001-Recovered.gif);
