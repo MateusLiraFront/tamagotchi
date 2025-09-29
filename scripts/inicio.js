@@ -17,9 +17,6 @@ tamagotchiTelaDeInicio.addEventListener('click', trocarTamagotchiOval);
 
 
 
-
-
-
 const meuBotao = document.getElementById('botao-troca-tela-inicio');
 const somDoClique = document.getElementById('som-botao');
 
@@ -38,3 +35,12 @@ const somDoClique = document.getElementById('som-botao');
     // Adiciona o "ouvinte" de evento de clique ao botão, que chama a função tocarSom
     meuBotao.addEventListener('click', tocarSom);
    
+
+  let musicaFundo = new Audio("../midia/03 - Definitely Our Town.mp3");
+  musica.loop = true;
+  function musica(){
+    if(musicaFundo.pause){
+      musicaFundo.currentTime = 0;
+      musicaFundo.play();
+    }
+  }

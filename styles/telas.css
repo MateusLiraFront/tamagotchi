@@ -89,14 +89,26 @@ height: 90px;
 margin: 22px;  
 }
 
-#bicho img {
-  
-  margin-left: 0px;
+#popup{
+  display:flex;
+  justify-content: center;
+  z-index: 100;
+  margin-left:0px;
+  margin-bottom: 0px;
+  height: 80px;
+  image-rendering: pixelated;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: margin-left 1s;
+}
 
+
+#bicho img {
+  margin-left:0px;
   margin-bottom: 20px;
   width: 90px;
   height: 100%;
-  animation-name: andar;
   transition: margin-left 2s;
 
 }

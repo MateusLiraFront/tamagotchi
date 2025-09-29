@@ -5,7 +5,7 @@ function andarEsquerda() {
   let novo = atual - 50;
 
   // limite para não sair da tela pela esquerda
-  if (novo < -350) novo = -350;
+  if (novo < -200) novo = -200;
 
   elemento.style.marginLeft = novo + "px";
   elemento.style.transform = "scaleX(-1)";
@@ -18,7 +18,7 @@ function andarDireita() {
   let novo = atual + 50;
 
   // limite para não sair da tela pela direita
-  if (novo > 650) novo = 650;
+  if (novo > 380) novo = 400;
 
   elemento.style.marginLeft = novo + "px";
   elemento.style.transform = "scaleX(1)";
@@ -32,7 +32,21 @@ function movimento() {
     } else {
       andarDireita();
     }
+    posicaoPopup();
   }, 1000);
 }
 
 document.addEventListener("DOMContentLoaded", movimento);
+
+// posição do popup
+let bicho = document.querySelector("#bicho img");
+let popup = document.querySelector("#popup");
+function posicaoPopup(){
+  
+  let estilo = window.getComputedStyle(bicho);
+  let marginLeft = parseInt(estilo.marginLeft) || 0;
+
+  popup.style.marginLeft = marginLeft + "px";
+
+}
+document.addEventListener("DOMContentLoaded", posicaoPopup);
